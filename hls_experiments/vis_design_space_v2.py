@@ -318,7 +318,7 @@ def plot_grouped_data(
 base_df = df_transformed[df_transformed["type"] == "base"]
 print(base_df["name"].value_counts())
 
-fig, axs = plt.subplots(2, 1, figsize=(8, 6))
+fig, axs = plt.subplots(2, 1, figsize=(8, 6.5))
 ax = axs[0]
 leg_artists = plot_grouped_data(
     df_transformed,

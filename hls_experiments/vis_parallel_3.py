@@ -231,7 +231,7 @@ mpl.rcParams.update({"font.size": 12})
 fig, axs = plt.subplots(
     2,
     1,
-    figsize=(7, 6),
+    figsize=(7, 5),
 )
 build_timeline_plot(
     df_naive_adjusted,
@@ -285,7 +285,7 @@ fig.legend(
 # fig.suptitle("HLS Synthesis Execution Parallelism", fontsize=16)
 
 fig.tight_layout()
-fig.subplots_adjust(bottom=0.15)
+fig.subplots_adjust(bottom=0.18)
 fig.savefig(FIGURES_DIR / "timeline_plot_v3.png", dpi=300)
 
 
